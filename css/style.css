@@ -1,0 +1,22 @@
+body {
+  background-image: url("../media/bg.png");
+  background-color: #EEEEEE;
+  background-attachment: fixed;
+}
+
+.container {
+  width: 77vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  width: 500px;
+  height: 500px;
+  margin: 50px;
+
+  border: 1px solid black;1
+}
