@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700|Nanum+Gothic');
 
-html { margin-left: calc(100vw - 100%); }
+html {
+    margin-left: calc(100vw - 100%);
+    scrollbar-width: none;
+}
 
 body {
   background-image: url("../media/bg.png");
@@ -11,7 +14,6 @@ body {
 }
 
 .themebg {
-    background-image: url("../media/blocks/2.jpg");
     width: 500px;
     height: 500px;
     left: 0px;
@@ -23,7 +25,7 @@ body {
     background-attachment: fixed;
     z-index: -1;
 
-    transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1), z-index 0.5s step-end;
+    transition: all 1.2s cubic-bezier(0.645, 0.045, 0.355, 1), z-index 1.2s step-end;
 }
 
 .box {
@@ -35,14 +37,14 @@ body {
     background-size: auto 102%;
     background-position: left;
 
-    transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1), z-index 1.2s step-end;
     filter: saturate(50%);
     filter: blur(0px);
     cursor: pointer;
     z-index: 0;
 }
 
-.box:hover:not(.current) > .bg-tile{
+.box:hover:not(.current) > .themebg{
     background-size: auto 102%;
     filter: saturate(90%);
     filter: blur(2px);
@@ -52,15 +54,15 @@ body {
     z-index: 1;
     border: 0;
     cursor: default;
-    transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1), z-index 0.75s step-start;
+    transition: all 1.2s cubic-bezier(0.645, 0.045, 0.355, 1), z-index 1.2s step-start;
 }
 
 .box.current > .themebg {
-    width: 200vw;
-    height: 200vh;
-    left: -50vw;
-    top: -50vh;
-    transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+    width: 300vw;
+    height: 300vh;
+    left: -100vw;
+    top: -100vh;
+    transition: all 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .container {
@@ -146,26 +148,26 @@ body {
 }
 
 
-#box-1 > .bg-tile{
+#box-1 > .themebg{
     background-image: url("../media/blocks/2.jpg");
 }
 
-#box-2 > .bg-tile{
+#box-2 > .themebg{
     background-image: url("../media/blocks/6.jpg");
 }
 
-#box-3 > .bg-tile{
+#box-3 > .themebg{
     background-image: url("../media/blocks/6.jpg");
 }
 
-#box-4 > .bg-tile{
+#box-4 > .themebg{
     background-image: url("../media/blocks/2.jpg");
 }
 
-#box-5 > .bg-tile{
+#box-5 > .themebg{
     background-image: url("../media/blocks/2.jpg");
 }
 
-#box-6 > .bg-tile{
+#box-6 > .themebg{
     background-image: url("../media/blocks/6.jpg");
 }
